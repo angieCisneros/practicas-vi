@@ -1,103 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practicas vi </title>
+    <title>entendamos mejor HTML</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+<header>
+   <h1 class="title">va un logo o como se llama la pagina</h1>
+</header>
+
+
 <body>
-</mein>
-<form>
-    <fieldset>
-        <legend> iniciar seccion </legend>
-    <input placeholder="tu correo"> 
-    <input placeholder="tu contraseña">
-    <button>ingresar</button>
+    <nav>
+        Articulos 
+        Clases 
+        Practicas
+    </nav> 
+    <aside> puedes seguirnos en redes
+             para mas temas como este <!--no son importantes pero van dentro del tema -->
+    </aside> 
+    <mein> 
+        
+
+        <article> <!-- es independiente, no requiere de otros contenidos-->
+    <h1> h1 es titulo de primer niven</h1>
+    <p> en p podemos colocar el parrafo, aqui ya va toda la informacion <br>
+        que deseamos poner para que el usirio pueda tener conocimiento <br>
+        del titulo que busca o require</p>
+        <a href="http://ed.team"> puedes ir a ed team para saber mas
+        </a>
+       <!--<section></section> a diferencia de article son para diviciones internas 
+    pero  del mismo contenido --> 
+    <h2>como es que funcionan los titulos de segundo nivel</h2>
+    <p> las eqtiquetas de segundo nivel, tercero,cuato,<br> hasta el seis sirven como 
+        subtitulos que nos ayudaran a que el usuario pueda comprender mas a fondo <br> 
+        el tema o informacion que solicita, dandole asi mas apoyo <br>
+         y mas temas que ayuden. <br>
+         <a href="http://ed.team"target=¨_blank¨>puedes ir a ed team 
+             para saber mas 
+         </a>
+    </p>
+    </article>
+    <h3> si queremos loegrarlo tenemos que:</h3> 
+   
+        <ul>
+            <li>estudiar</li>
+            <ol>
+                <li>estudiar 5 horas minimo</li>
+                <li>estudiar</li>
+                <li>estudiar CCS</li>
+            </ol>
+            <li>tener iniciativa</li>
+            <li>cuidar mi tiempo</li>
+        </ul>
+    
+    </mein>
+    <form>
+        <fieldset>
+            <legend> iniciar seccion </legend>
+        <input placeholder="tu correo"> 
+        <input placeholder="tu contraseña">
+        <button>ingresar</button>
+        </fieldset> 
+        <fieldset>
+            <legend>tus comentarios</legend>
+            <textarea  cols="20" rows="5"></textarea>
+        </fieldset>
+    </form>
+    <fieldset> 
+        <legend>datos personales</legend>
+        Tu nombre 
+        <input placeholder="tu nombre">
+        <div>
+            Tu edad 
+            <input type="number" >
+        </div>
+        <div>
+            fecha de nacimiento 
+            <input type="date" >
+        </div>
+        <div>
+            Email
+            <input type="email"> 
+        </div>
+        
+    
     </fieldset> 
     <fieldset>
-        <legend>tus comentarios</legend>
-        <textarea  cols="20" rows="5"></textarea>
-    </fieldset>
-</form>
-<fieldset> 
-    <legend>datos personales</legend>
-    Tu nombre 
-    <input placeholder="tu nombre">
-    <div>
-        Tu edad 
-        <input type="number" >
-    </div>
-    <div>
-        fecha de nacimiento 
-        <input type="date" >
-    </div>
-    <div>
-        Email
-        <input type="email"> 
-    </div>
-    
-
-</fieldset> 
-<fieldset>
-    <legend>Hermanos</legend>
-    <div>
-        <label>
-           1 <input name="brothers" type="radio">
-        </label>  
-    </div>
-    <div>
-        <label>
-           2 <input name="brothers" type="radio">
-        </label>  
-        <div>
+        <legend>Hermanos</legend>
         <div>
             <label>
-           3 <input name="brothers" type="radio">
+               1 <input name="brothers" type="radio">
             </label>  
         </div>
-    
-</fieldset>
-
-<fieldset>
-    <legend>tu pais de origen. ejemplo uno</legend>
-    <select name="contry" id="">
-        <optgroup label="sudamerica">
-            <option value="pe">Perú</option>
-        <option value="col">Colombia</option>
-        <option value="bo">Bolibia</option>
-        </optgroup>
-       <optgroup label="norteamerica">
-        <option value="mx">México</option>
-       </optgroup>
+        <div>
+            <label>
+               2 <input name="brothers" type="radio">
+            </label>  
+            <div>
+            <div>
+                <label>
+               3 <input name="brothers" type="radio">
+                </label>  
+            </div>
+        
     </fieldset>
 
-       <fieldset>
-        <legend>tu pais de origen. ejemplo dos</legend>
-        <input type="lidt" list="country-list">
-        <details id="country-list">
-            <option value="Peru">Peru</option>
-            <option value="Colombia">Colombia</option>
-            <option value="Bolibia">Bolibia</option>
-            <option value="Mexico">Mexico</option>
-            <option value="Chile">Chile</option>
-        </details>
+    <fieldset>
+        <legend>tu pais de origen. ejemplo uno</legend>
+        <select name="contry" id="">
+            <optgroup label="sudamerica">
+                <option value="pe">Perú</option>
+            <option value="col">Colombia</option>
+            <option value="bo">Bolibia</option>
+            </optgroup>
+           <optgroup label="norteamerica">
+            <option value="mx">México</option>
+           </optgroup>
+        </fieldset>
+    
+           <fieldset>
+            <legend>tu pais de origen. ejemplo dos</legend>
+            <input type="lidt" list="country-list">
+            <details id="country-list">
+                <option value="Peru">Peru</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Bolibia">Bolibia</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Chile">Chile</option>
+            </details>
+            
+           </fieldset>
+        <br>
+    <fieldset>
+        ¿Estas deacuerdo en permitir que podamos <br>
+        guardar tu informacion de manera segura<br> 
+        y sin darle mal uso ni con otros fines comerciales?
+        <div>
+           si <input type="checkbox">           
+        </div>
         
-       </fieldset>
-    <br>
-<fieldset>
-    ¿Estas deacuerdo en permitir que podamos <br>
-    guardar tu informacion de manera segura<br> 
-    y sin darle mal uso ni con otros fines comerciales?
-    <div>
-       si <input type="checkbox">           
-    </div>
-    
-</fieldset>
-
-<footer> esto quiere decir pie de pagina y es 
-    para poner algunos datos por ejemplo de una empresa
-</footer>
-    
+    </fieldset>
+  
+    <footer> esto quiere decir pie de pagina y es 
+        para poner algunos datos por ejemplo de una empresa
+    </footer>
 </body>
-</html>
+</htmlss
