@@ -41,3 +41,19 @@ let i = 20
 console.log(g > h && g < i) // && es "a su vez" || es "o"
 // let resp = (g > h) && (g < i)
 
+let persona = "angie"
+let edad = 20
+let sipervicion = true
+
+
+if (edad > 20 && edad < 35) {
+    console.log(`${persona}puede entrar a la pagina web`)
+}else if(supervicion === true && edad < 20 ) {console.log(`${persona}puede entrar a la pagina web`)
+}
+    else{
+    console.log(`${persona},no puedes acceder`)
+}
+
+
+
+
